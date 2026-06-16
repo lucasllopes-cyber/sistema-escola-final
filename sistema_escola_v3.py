@@ -40,8 +40,21 @@ def dividir(a, b):
 
 # Adicione aqui as funções conforme o roteiro pedir:
 
-# >> FUNÇÃO 5: cadastrar_aluno(nome, turma, idade)
-# >> FUNÇÃO 6: exibir_aluno(aluno)
+def cadastrar_aluno(nome, turma, idade):
+    aluno = {
+        "nome": nome,
+        "turma": turma,
+        "idade": idade
+    }
+    return aluno
+
+def exibir_aluno(aluno):
+    print("==== DADOS DO ALUNO ====")
+    print(f"Nome : {aluno['nome']}")
+    print(f"Turma: {aluno['turma']}")
+    print(f"Idade: {aluno['idade']} anos")
+    print("========================")
+
 # >> FUNÇÃO 7: calcular_media(notas)
 # >> FUNÇÃO 8: verificar_aprovacao(media)
 # >> FUNÇÃO 9: gerar_email(nome, turma)
